@@ -12,6 +12,11 @@
 let colors = require('tailwindcss/colors');
 
 module.exports = {
+    purge: [
+        './public/**/*.html',
+        './src/**/*.html',
+        './src/**/*.vue',
+    ],
     theme: {
         inset: {
             '1/2': '50%',
