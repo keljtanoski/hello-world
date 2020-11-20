@@ -20,6 +20,7 @@
       </div>
     </div>
   </div>
+  <!-- This is an example component -->
 </template>
 <script>
 export default {

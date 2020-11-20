@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/cv">CV</router-link>
+    <div class="main">
+      <div class="flex flex-row h-full">
+        <!-- Sidebar -->
+        <sidebar/>
+        <div class="px-16 py-4 text-gray-700 bg-gray-200 h-screen w-screen">
+          <router-view/>
+          <!-- Content -->
+        </div>
+      </div>
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -31,3 +35,10 @@
   color: #42b983;
 }
 </style>
+<script>
+import Sidebar from "@/components/Sidebar";
+
+export default {
+  components: {Sidebar}
+}
+</script>
